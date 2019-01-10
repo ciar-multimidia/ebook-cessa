@@ -1,0 +1,98 @@
+/* GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+
+
+/* BOX SIZING */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* TAMANHOS */
+
+$width-container1: 1200px;
+$width-container2: 800px;
+$width-container3: 500px;
+
+$width-content1: 1000px;
+$width-content2: 500px;
+$width-content3: 450px;
+
+.sizes-container{
+	margin: 0 auto;
+	width: $width-container1;
+	@media screen and (max-width: 1250px){
+		width: $width-container2;
+	}
+	@media screen and (max-width: 850px){
+		width: $width-container3;
+	}
+	@media screen and (max-width: 520px){
+		width: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+
+.sizes-content{
+	margin: 0 auto;
+	width: $width-content1;
+	@media screen and (max-width: 1250px){
+		width: $width-content2;
+	}
+	@media screen and (max-width: 850px){
+		width: $width-content3;
+	}
+	@media screen and (max-width: 520px){
+		width: 100%;
+	}
+}
+
+/* CORES */
+
+$marrom: 			#4a1d0e;
+$marrom-texto: 		#180C0C;
+$azul: 				#0fb8e5;
+$azul-link: 		#0098c1;
+$ciano: 			#2db3af;
+$verde1: 			#45af75;
+$verde2: 			#50ac32;
+
+
+/* FONTES */
+
+$fonte-titulo: 'Museo', Verdana, sans-serif;
+$fonte-corpo: 'Open Sans', Arial, sans-serif;
+
+
+
+/* PADROES */
+
+html{
+	font-size: 15px;
+	line-height: 1.7;
+	font-family: $fonte-corpo;
+	color: $marrom-texto;
+}
+
+h1,h2,h3,h4{
+	font-family: $fonte-titulo;
+	font-weight: 500;
+	line-height: 1.3;
+}
+
+button{
+	@include appearance(none);
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+	&:hover{
+		cursor: pointer;
+	}
+}

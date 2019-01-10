@@ -1,0 +1,214 @@
+@media print{
+
+	html{
+		color: black;
+		font-size: 9pt;
+		line-height: 1.5;
+		text-align: justify;
+		@include hyphens(auto);
+		color: black;
+	}
+
+	body{
+		background-image: none;
+		background-color: transparent;
+		padding: 1em;
+	}
+
+	#footer, #nav-paginas{
+		display: none;
+	}
+
+	#header{
+		width: 100% !important;
+		.logo-e-links{
+			width: 100% !important;
+			padding: 0;
+			a.logo-curso{
+				img{
+					height: 1.5cm;
+				}
+			}
+			a.site{
+				display: none;
+			}
+		}
+		
+
+		section.modulo-titulo{
+			// padding: 0;
+			width: 100% !important;
+			background-color: transparent;
+			border-bottom: 4px solid hsl(0, 0%, 85%);
+			h2,h1{
+				width: 100%;
+				color: $azul;
+				text-align: left;
+				@include hyphens(none);
+			}
+		}
+	}
+
+	main{
+		width: 100% !important;
+
+		section.modulos{
+
+		}
+
+		article{
+			width: 100% !important;
+			& > *{
+				width: 65%;
+			}
+			h2,h3,h4,h4{
+				color: black;
+				text-align: left;
+				@include hyphens(none);
+			}
+
+			h2{
+
+			}
+
+			a{
+				&, &:visited, &:link{
+					color: inherit;
+					// text-decoration: none;
+				}
+			}
+
+			span.pagina{
+				display: none;
+			}
+
+			figure{
+				page-break-inside: avoid;
+				a,img,figcaption{
+					page-break-inside: avoid;
+				}
+			}
+
+			ol,ul{
+				line-height: inherit;
+			}
+
+			
+
+			table{
+				min-width: 65%;
+				font-size: 7pt;
+				line-height: 1.7;
+				text-align: left;
+				page-break-inside: avoid;
+				@include hyphens(none);
+				thead{
+					th{
+						font-weight: bold;
+						background-color: transparent;
+						color: black;
+					}
+					tr:last-child{
+						th{
+							border-bottom: 2px solid black;
+						}
+					}
+				}
+
+				tbody{
+					tr{
+						&:nth-child(even){
+							th,td{
+								background-color: transparent;
+							}
+						}
+
+						th,td{
+							border-bottom: 1px solid hsl(0,0%,60%);
+						}
+					}
+				}
+			}
+
+			aside{
+				text-align: left;
+				@include hyphens(none);
+				width: 32%;
+				font-size: 6pt;
+				line-height: 1.45;
+				color: hsl(0,0%,55%);
+			}
+
+
+			.box{
+				margin-top: 0;
+				padding: 0;
+				border-radius: 0;
+				&, &.verde{
+					background-color: transparent;
+				}
+
+				h2,h3,h4,h5{
+					color: hsl(0,0%, 30%);
+				}
+				h3{
+					font-size: 1.2em;
+					& + *{
+						margin-top: 0;
+					}
+				}
+			}
+
+
+			.bt-nota-rodape{
+				&, &.ativo{
+					color: inherit;
+					font-size: 0.8em;
+					padding: 0;
+					background-color: transparent;
+				}
+			}
+
+
+			#notas-de-rodape{
+				margin-top: 2em;
+				padding-top: 2em;
+				border-top: 1px dotted grey;
+				position: static;
+				display: block;
+				background-color: transparent;
+				opacity: 1;
+				width: 100%;
+				&:before{
+					content: "Notas de rodap\e9";
+					display: block;
+					color: grey;
+					font-size: 1.5em;
+					font-style: italic;
+					margin-bottom: 1em;
+
+				}
+				&.animation{
+					@include animation(none);
+				}
+
+				.ctn-bt-fechar{
+					@include display(none);
+				}
+
+				& > div[data-nota]{
+					font-size: 1em;
+					padding: 0;
+					display: block;
+					margin-bottom: 1.5em;
+					&:before{
+						content: attr(data-nota);
+						float: left;
+						font-weight: bold;
+						margin-right: 1em;
+					}
+				}
+			}
+		}
+	}
+}

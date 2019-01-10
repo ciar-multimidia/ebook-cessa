@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>CESSA</title>
+	
+	<link rel="apple-touch-icon" href="assets/media/fb-image.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<header id="header">
+		<div class="logo-e-links">
+			<a class="logo-curso" href="index.html"><img src="assets/media/logo-cessa.svg" alt=""></a>
+			<a class="site" href="http://sanrural.ufg.br/" target="blank">Site do SanRural <img src="assets/media/external_link.svg" alt=""></a>
+		</div>
+
+		<section class="cont-ficha-tecnica">
+			<button class="bt-ficha">Ficha técnica</button>
+			<section class="ficha-tecnica">
+				<div>
+					<h2>Universidade Federal de Goiás</h2>
+
+					<dl>
+						<dt>Reitoria</dt>
+						<dd>Edward Madureira Brasil</dd>
+
+						<dt>Pró-Reitoria de Pós-Graduação</dt>
+						<dd>Laerte Guimarães Ferreira Júnior</dd>
+					</dl>
+				</div>
+
+				<div>
+					<h2>Equipe SanRural</h2>
+					<dl>
+						<dt>Coordenador Geral</dt>
+						<dd>Paulo Sergio Scalize</dd>
+
+						<dt>Subcoordenadora Geral</dt>
+						<dd>Bárbara de Souza Rocha</dd>
+
+						<dt>Apoio a Coordenação</dt>
+						<dd>Afonso Luis da Silva</dd>
+
+						<dt>Coordenadora de Curso</dt>
+						<dd>Katia Kopp</dd>
+
+						<dt>Vice-coordenadora do Curso</dt>
+						<dd>Amone Inácia Alves</dd>
+					</dl>
+				</div>
+
+				<div>
+					<h2>CIAR • Centro Integrado de Aprendizagem em Rede</h2>
+					<dl>
+						<dt>Direção</dt>
+						<dd>Marília de Goyaz</dd>
+
+						<dt>Vice-Direção</dt>
+						<dd>Silvia Carla Nunes de Figueiredo Costa</dd>
+
+						<dt>Coordenação de Produção e de Comunicação Impressa</dt>
+						<dd>Ana Bandeira</dd>
+
+						<dt>Coordenação de Produção Multimídia</dt>
+						<dd>Wagner Bandeira</dd>
+
+						<dt>Design Gráfico - Projeto Editorial</dt>
+						<dd>Equipe de Publicação CIAR</dd>
+						
+						<dt>Criação do Projeto Gráfico</dt>
+						<dd>Leandro Abreu</dd>
+
+						<dt>Desenvolvimento e diagramação</dt>
+						<dd>Victor Hugo Godoi</dd>
+
+					</dl>
+				</div>
+			</section>
+		</section>
+
+	</header>
+
+
+	<main>
+
+
+		<section class="modulos">
+			<a href="modulos/0_guia_cursista/01.html">
+				<div class="sizes-content">
+					<h3>Guia do Cursista</h3>
+				</div>
+			</a>
+
+
+			<a href="modulos/1_modulo_introdutorio/01.html">
+				<div class="sizes-content">
+					<p>1</p>
+					<h2>Módulo Introdutório</h2>
+					<h3>Fundamentos da EaD e ambientação digital</h3>
+				</div>
+			</a>
+
+
+			<a href="modulos/2_modulo_educacao/capa.html">
+				<div class="sizes-content">
+					<p>2</p>
+					<h2>Módulo Educação</h2>
+					<h3>Comunidades rurais e tradicionais e seu ambiente</h3>
+				</div>
+			</a>
+
+
+			<a href="modulos/3_modulo_metodo/capa.html">
+				<div class="sizes-content">
+					<p>3</p>
+					<h2>Módulo Método</h2>
+					<h3>Metodologia do Trabalho Científico e Popular</h3>
+				</div>
+			</a>
+
+
+			<a disabled href="javascript:void()">
+				<div class="sizes-content">
+					<p>4</p>
+					<h2>Módulo Saúde</h2>
+					<h3>Promoção da Saúde em Comunidades Rurais</h3>
+				</div>
+			</a>
+
+
+			<a disabled href="javascript:void()">
+				<div class="sizes-content">
+					<p>5</p>
+					<h2>Módulo Saneamento</h2>
+					<h3>Saneamento básico rural</h3>
+				</div>
+			</a>
+
+
+			<a disabled href="javascript:void()">
+				<div class="sizes-content">
+					<h3>Trabalho de Conclusão de Curso • TCC</h3>
+				</div>
+			</a>
+
+
+		</section>
+	</main>
+  
+  <script src="https://producao.ciar.ufg.br/cdn/jquery/jquery-lastest.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+  	jQuery(document).ready(function($) {
+  		var $sectionFicha = $('.cont-ficha-tecnica');
+  		var $btFicha = $sectionFicha.find('.bt-ficha');
+
+  		$btFicha.on('click', function(event) {
+  			if ($sectionFicha.hasClass('ativo')) {
+  				var prevHeight = $sectionFicha.height();
+  				$sectionFicha.removeClass('ativo');
+  				var nextHeight = $sectionFicha.height();
+  				$sectionFicha.addClass('ativo');
+  				$sectionFicha.css('height', prevHeight+'px').animate({'height': nextHeight+'px'}, 300, function(){
+  					$sectionFicha.removeClass('ativo');
+  					$sectionFicha.css('height', '');
+  				});
+  			} else{
+  				var prevHeight = $sectionFicha.height();
+  				$sectionFicha.addClass('ativo');
+  				var nextHeight = $sectionFicha.height();
+  				$sectionFicha.css('height', prevHeight+'px').animate({'height': nextHeight+'px'}, 300, function(){
+  					$sectionFicha.css('height', '');
+  				});
+  			}
+  		});
+  	});
+  </script>
+</body>
+
+</html>

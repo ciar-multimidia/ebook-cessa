@@ -68,7 +68,11 @@
 			}
 
 			h2{
-
+				& > a{
+					&, &:link, &:visited{
+						display: none;
+					}
+				}
 			}
 
 			a{

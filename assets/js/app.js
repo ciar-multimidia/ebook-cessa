@@ -108,8 +108,47 @@ jQuery(document).ready(function($) {
 				getCurrentPage();
 			}
 		});
-
 	}
+
+
+
+
+	var $subtitulosCapitulo = $('main article').find('h2, h3');
+
+	$subtitulosCapitulo.each(function(index, el) {
+		if ($(el).attr('id')) {
+			var ancoraSubcap = $('<a>#</a>').attr('href', '#'+$(el).attr('id'));
+			$(el).append(ancoraSubcap);
+		}
+
+		else{
+			// console.log($(el).text() + ' não tem id')
+		}
+	});
+
+
+
+
+	var $btSumario = $('footer .capitulos .bt-sumario');
+	var $listaSumario = $('footer .capitulos ul.sumario-capitulo');
+
+	$btSumario.on('click', function(event) {
+		$(this).toggleClass('ativo');
+		$listaSumario.toggleClass('ativo');
+		event.stopPropagation();
+		
+	});
+
+	$listaSumario.on('click', function(event) {
+		event.stopPropagation();
+	});
+
+	$('body').on('click', function(event) {
+		if ($btSumario.hasClass('ativo')) {
+			$btSumario.toggleClass('ativo');
+			$listaSumario.toggleClass('ativo');
+		}
+	});
 });
 
 

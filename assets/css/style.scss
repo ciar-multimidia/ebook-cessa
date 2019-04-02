@@ -704,6 +704,11 @@ main{
 				font-size: 0.9em;
 			}
 
+			tr.destaque {
+				background-color: #ddf6fd;
+				td {background-color: transparent;}
+			}
+
 			th{
 				text-align: left;
 			}
@@ -742,9 +747,15 @@ main{
 					border-top: 3px solid $ciano;
 					border-bottom: 3px solid $ciano;
 					tr{
+						&.destaque {
+							td {background-color: transparent;}
+						}
+						
 						th,td{
 							border-left: 1px solid hsl(0,0%,80%);
 							border-right: 1px solid hsl(0,0%,80%);
+							border-bottom: 1px solid hsl(0,0%,80%);
+							background-color: white;
 						}
 						&:first-child{
 							

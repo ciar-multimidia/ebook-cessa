@@ -563,6 +563,8 @@ main{
 				display: block;
 				max-width: 100%;
 				height: auto;
+				margin: 0 auto;
+				text-align: center;
 			}
 			figcaption{
 				font-size: 0.8em;
@@ -571,6 +573,8 @@ main{
 			&.grande{
 				width: 100%;
 				clear: right;
+
+				figcaption {text-align: center}
 			}
 
 			&.flutuante{

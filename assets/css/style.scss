@@ -91,11 +91,13 @@ body{
 		}	
 
 		h3{
-			font-size: 1.7em;
+			font-size: 2em;
 			@extend .sizes-content;
 			line-height: 1.2;
-			font-weight: normal;
-			color: white;
+			// font-weight: bold; 
+			font-style: italic;
+			color: white; margin-top: 0.5em;
+			font-family: $fonte-corpo;
 		}
 	}
 

@@ -89,6 +89,14 @@ body{
 				vertical-align: middle;
 			}
 		}	
+
+		h3{
+			font-size: 1.7em;
+			@extend .sizes-content;
+			line-height: 1.2;
+			font-weight: normal;
+			color: white;
+		}
 	}
 
 	section.cont-ficha-tecnica{

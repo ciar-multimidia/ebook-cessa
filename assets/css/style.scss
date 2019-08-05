@@ -734,6 +734,12 @@ main{
 				text-align: left;
 			}
 
+			.center{
+				&, & *{
+					text-align: center;
+				}
+			}
+
 			th,td{
 				// border-bottom: 1px solid #BFBFBF;
 				// border-right: 1px solid #999999;
@@ -847,6 +853,9 @@ main{
 					}
 				}
 			}
+
+			.embed-yt-video {padding-bottom: 56%};
+
 		}
 
 		.colunas{

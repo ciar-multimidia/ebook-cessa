@@ -15,12 +15,14 @@ html {
 /* TAMANHOS */
 
 $width-container1: 1200px;
-$width-container2: 800px;
-$width-container3: 500px;
+$width-container2: 1000px;
+$width-container3: 800px;
+$width-container4: 500px;
 
 $width-content1: 1000px;
-$width-content2: 500px;
-$width-content3: 450px;
+$width-content2: 900px;
+$width-content3: 750px;
+$width-content4: 450px;
 
 .sizes-container{
 	margin: 0 auto;
@@ -28,8 +30,12 @@ $width-content3: 450px;
 	@media screen and (max-width: 1250px){
 		width: $width-container2;
 	}
-	@media screen and (max-width: 850px){
+
+	@media screen and (max-width: 1000px){
 		width: $width-container3;
+	}
+	@media screen and (max-width: 850px){
+		width: $width-container4;
 	}
 	@media screen and (max-width: 520px){
 		width: 100%;
@@ -45,8 +51,11 @@ $width-content3: 450px;
 	@media screen and (max-width: 1250px){
 		width: $width-content2;
 	}
-	@media screen and (max-width: 850px){
+	@media screen and (max-width: 1000px){
 		width: $width-content3;
+	}
+	@media screen and (max-width: 850px){
+		width: $width-content4;
 	}
 	@media screen and (max-width: 520px){
 		width: 100%;

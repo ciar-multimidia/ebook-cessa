@@ -432,8 +432,19 @@ main{
 			float: right;
 			clear: right;
 			width: 35%;
+			margin-bottom: 1em;
 			&:first-of-type{
 				margin-top: 0;
+			}
+
+			figure{
+				&.multiplos{
+					.lista{
+						a{
+							height: 60px;
+						}
+					}
+				}
 			}
 		}
 
@@ -576,6 +587,8 @@ main{
 				margin: 0 auto;
 				text-align: center;
 			}
+
+			
 			figcaption{
 				font-size: 0.8em;
 				color: grey;
@@ -586,6 +599,47 @@ main{
 
 				figcaption {text-align: center}
 			}
+
+			&.multiplos{
+				width: 100%;
+				clear: right;
+				.lista{
+					@include display(flex);
+					@include flex-wrap(wrap);
+					a{
+						height: 200px;
+						width: auto;
+						margin-top: 0;
+						margin-right: 0.5em;
+						margin-bottom: 0.5em;
+						position: relative;
+						&:after{
+							color: white;
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							background-color: rgba(0,0,0,0.8);
+							padding: 0.1em 0.5em;
+						}
+						img{
+							height: 100%;
+							width: auto;
+						}
+
+						$letras:"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z";
+
+						@each $letra in $letras{
+							$i: index($letras, $letra);
+							&:nth-child(#{$i}):after{
+								content: $letra;
+							}
+						}
+					}
+				}
+				
+			}
+
+
 
 			&.flutuante{
 				width:30%;
@@ -734,7 +788,7 @@ main{
 				text-align: left;
 			}
 
-			.center{
+			&.center, .center{
 				&, & *{
 					text-align: center;
 				}
@@ -752,7 +806,7 @@ main{
 				// border-bottom: 	1px solid #7F7F7F;
 				// border-top: 	2px solid #646464;
 				th{
-					font-weight: normal;
+					font-weight: bold;
 					background-color: $ciano;
 					color: white;
 					// border-color: $marrom-texto;
@@ -769,10 +823,18 @@ main{
 				}
 			}
 
+			tfoot{
+				font-size: .9em;
+				background-color: $ciano;
+				color: white;
+			}
+
 			&.com-bordas{
 				tbody{
 					border-top: 3px solid $ciano;
-					border-bottom: 3px solid $ciano;
+					&:last-child{
+						border-bottom: 3px solid $ciano;
+					}
 					tr{
 						&.destaque {
 							td {background-color: transparent;}

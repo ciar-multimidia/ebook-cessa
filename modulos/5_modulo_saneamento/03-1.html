@@ -261,7 +261,555 @@
 		<p>Os termos e conceitos aplicados à Gestão de Riscos preconizados no âmbito das normas internacionais (ISO/IEC 31000:2009 e o Guia ISO 73: 2011) e da nacional (ABNT NBR ISO/IEC 31000:2009 e ABNT ISO/IEC Guia 73:2009) estão listados no Anexo 1 (Tabela A). </p>
 		<p>A realização da análise de riscos leva em consideração as causas e as fontes de riscos, suas consequências e a probabilidade de que essas consequências possam ocorrer. Ela pode ocorrer com vários graus de detalhamento, dependendo do risco, da finalidade da análise e das informações, dos dados e recursos disponíveis. De acordo com as normas internacionais e a nacional, a análise de risco pode ser dividida em:</p>
 
+		<h4>i) qualitativa</h4>
+		<p>A análise qualitativa define consequência, probabilidade e nível de risco por níveis de significância, tais como &ldquo;<strong>alto&rdquo;</strong>, &ldquo;<strong>médio</strong>&rdquo; e &ldquo;<strong>baixo</strong>&rdquo;, podendo combinar consequência e probabilidade e avaliando o nível de risco resultante em comparação com os critérios qualitativos (NBR ISO/IEC: 2012). </p>
+		<p>É frequentemente utilizada nas seguintes situações:</p>
+		<ul>
+		  <li><strong>a)</strong> nas fases iniciais de processos, de forma a identificar riscos que possuem alto nível de criticidade;</li>
+		  <li><strong>b)</strong> quando o nível do risco identificado não necessitar de análises mais detalhadas, e</li>
+		  <li><strong>c)</strong> quando não for possível realizar análise quantitativa, devido à carência de informações numéricas (AS/NZS: 2004 e ISO/IEC: 31000). </li>
+		</ul>
+		<p>O Quadro 1.3 mostra exemplos de escalas qualitativas de probabilidade e consequências, as quais servem a exercícios de priorização de riscos.</p>
 
+		<table>
+			<caption>Quadro 1.3 - Exemplos de medidas qualitativas de probabilidade de ocorrência e de consequência de riscos. Fonte: Adaptado de AS/NZS (2004) e ISO/IEC (2009).</caption>
+		  <thead><tr>
+		    <th colspan="3"><strong>Consequência</strong></th>
+		    <th colspan="3"><strong>Probabilidade</strong></th>
+		  </tr></thead>
+		  <tr>
+		    <td><strong>Nível</strong></td>
+		    <td><strong>Descritor</strong></td>
+		    <td><strong>Descrição das consequências</strong></td>
+		    <td><strong>Nível</strong></td>
+		    <td><strong>Descritor</strong></td>
+		    <td><strong>Descrição da probabilidade de ocorrência</strong></td>
+		  </tr>
+		  <tr>
+		    <td>1 </td>
+		    <td>Insignificante </td>
+		    <td>Sem lesões, prejuízo econômico   reduzido. </td>
+		    <td>A </td>
+		    <td>Quase certo </td>
+		    <td>Espera-se que ocorra na maioria das   vezes. </td>
+		  </tr>
+		  <tr>
+		    <td>2 </td>
+		    <td>Reduzida </td>
+		    <td>Tratamento com primeiros socorros,   prejuízo econômico mediano. </td>
+		    <td>B </td>
+		    <td>Provável </td>
+		    <td>Provavelmente ocorrerá na maioria das   vezes. </td>
+		  </tr>
+		  <tr>
+		    <td>3 </td>
+		    <td>Moderada </td>
+		    <td>Tratamento médico necessário, prejuízo   econômico significativo. </td>
+		    <td>C </td>
+		    <td>Possível </td>
+		    <td>Deverá ocorrer eventualmente. </td>
+		  </tr>
+		  <tr>
+		    <td>4 </td>
+		    <td>Elevada </td>
+		    <td>Graves lesões, perda de capacidade de   produção, prejuízo econômico elevado. </td>
+		    <td>D </td>
+		    <td>Improvável </td>
+		    <td>Poderá ocorrer eventualmente. </td>
+		  </tr>
+		  <tr>
+		    <td>5 </td>
+		    <td>Catastrófica </td>
+		    <td>Morte, efeitos tóxicos crônicos,   enorme prejuízo econômico. </td>
+		    <td>E </td>
+		    <td>Raro </td>
+		    <td>Poderá ocorrer em circunstâncias   excepcionais. </td>
+		  </tr>
+		</table>
+
+		<p>Para avaliar o risco associado a um evento ou perigo, determina-se a probabilidade de ocorrência, por meio da <strong>Escala de Probabilidade de Ocorrência (frequente, pouco frequente e raro)</strong><button class="bt-nota-rodape" data-nota="2"></button>, e as consequências para o meio ambiente e a saúde da população, por meio de uma <strong>Escala de Gravidade das Consequências (insignificante, baixo, grave, catastrófica)</strong><button class="bt-nota-rodape" data-nota="3"></button> (AS/NZS, 2004; ISO/IEC, 2009; ABNT, 2009 e WHO, 2011).</p>
+
+		<p>Com base na definição, risco é uma função tanto da probabilidade como da medida das consequências. </p>
+		<p>A partir da equação de estimativa do risco foi possível construir a Matriz de Priorização de Risco por meio da técnica qualitativa. Essa técnica utiliza termos que bem expressem a probabilidade de ocorrência e a gravidade das consequências de um determinado perigo (Figura 1.7).</p>
+
+		<!-- FIGURA 1.7 -->
+
+		<h4>ii) Análise semiquantitativa</h4>
+		<p>A análise semiquantitativa é determinada por meio do cálculo do risco (sendo que Risco = ocorrência que o perigo ocorre x severidade em termos de risco à saúde). O cruzamento dos valores de probabilidade e consequência resulta em um risco (elevado, alto, médio e baixo). As escalas podem ser lineares ou logarítmicas ou podem ter alguma outra relação; as fórmulas utilizadas também podem variar (Figura 1.8). </p>
+
+		<!-- FIGURA 1.8 -->
+
+		<p>Observa-se que um mesmo produto numérico pode ser classificado em níveis distintos de risco, dependendo do que for assumido como de maior peso (probabilidade ou consequência). Portanto, nessa abordagem, assim como na matriz qualitativa, em função do elevado grau de subjetividade, é preciso critério na definição dos descritores, na atribuição de pesos e na definição de níveis hierárquicos. Segundo a norma, a definição dos atributos da probabilidade e da consequência deve ser adaptada ao cenário em estudo.</p>
+
+		<h4>iii) análise quantitativa</h4>
+
+		<p>A análise quantitativa é caracterizada a partir da combinação de experiências, dados epidemiológicos locais/regionais e de literatura. Essa análise objetiva estimar numericamente as consequências de exposição ao(s) perigo(s) especificado(s). Os métodos quantitativos geralmente são mais precisos e, portanto, requerem dados de campo, o que envolveria pesquisas com a população atingida sobre mortes ou agravos e dados experimentais derivados de estudos com animais. </p>
+		<p>Em resumo, para a análise de riscos, deve-se recorrer a dados históricos, mas, em casos indisponíveis, podem ser feitas estimativas subjetivas que reflitam o grau de expectativa de um indivíduo ou grupo quanto à ocorrência ou consequência de determinado evento. Para minimizar o viés subjetivo, convém utilizar as melhores fontes de informação e técnicas disponíveis. As fontes de informação podem incluir:</p>
+
+		<ol>
+		  <li>dados históricos;</li>
+		  <li>experiências de operadores e técnicos;</li>
+		  <li>publicações pertinentes, e</li>
+		  <li>estudos e pesquisas realizadas, envolvendo experimentos e opiniões de especialistas e peritos.</li>
+		</ol>
+
+		<div class="box">
+			<h3>Para saber mais sobre os métodos de análise de risco, consulte as normas:</h3>
+			<p>ABNT - ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. ABNT/ISO Guia 73. <strong>Gestão de riscos </strong>- Vocabulário. Rio de Janeiro: ABNT, 2009.</p>
+			<p>ABNT -  ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. ABNT/NBR/ISO: 31000. <strong>Gestão de riscos </strong>– Princípios e diretrizes. Rio de Janeiro: ABNT, 2009.</p>
+			<p>ABNT -  ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. ABNT/NBR/ISO; IEC: 31010. <strong>Gestão de riscos </strong>– Técnicas para o processo de avaliação de riscos. Rio de Janeiro: ABNT, 2012. 96p.</p>
+		</div>
+
+
+		<h2 id="etapas-elaboracao-psa">Etapas para elaboração do PSA</h2>
+
+		<p>A seguir serão apresentadas de forma resumida as etapas para elaboração dos PSA propostas por Bartram <em>et al.</em> (2009). O PSA é composto por três componentes principais e possuem oito etapas, além de uma etapa de preparação e duas de <em>feedback</em> e melhorias, totalizando, assim, onze etapas. Contudo, para pequenas comunidades, WHO (2012) propõe um total de seis etapas. </p>
+
+		<aside class="box">
+			<h3>Saiba mais</h3>
+		<p>A abordagem PSA adaptada para pequenas comunidades pode ser encontrada em: <a href="http://www.who.int/watersanitationhelt/publications/small-comm-watersupplies/en/." target="_blank">http://www.who.int/watersanitationhelt/publications/small-comm-watersupplies/en/.</a></p>
+		</aside>
+
+		<p>Embora haja uma proposição de etapas de elaboração de PSA, destaca-se que a abordagem utilizada não é uma receita que deve ser seguida à risca para atingir o sucesso, contrariamente, ela é suficientemente flexível para ser adaptada às necessidades locais (WHO, 2012).</p>
+
+
+		<p>A explicação do desenvolvimento do PSA foi dividida em quatro etapas, conforme descrito na Figura 1.9</p>
+
+		<!-- FIGURA 1.9 -->
+
+
+		<h3>Etapa de atividades antecedentes à elaboração do PSA</h3>
+		<p>Antes de iniciar o desenvolvimento das principais etapas do PSA, vamos entender qual a finalidade e quais os passos necessários para implantação dessa etapa. Os passos para a execução dessa etapa estão descritos na Figura 1.10 e Tabela 1.1. </p>
+
+		<!-- FIGURA 1.10 -->
+
+		<table>
+			<caption>Tabela 1.1 - Passos para execução das atividades antecedentes à elaboração do PSA. Fonte: Autores. </caption>
+		  <thead><tr>
+		    <th><strong>O que e como?</strong></th>
+		    <th><strong>Formulários</strong></th>
+		  </tr></thead>
+		  <tr>
+		    <td><strong>1º   passo: planejamento das atividades.</strong><br>
+		      Para que a implantação do PSA tenha êxito é   imprescindível iniciar com o planejamento de todas as atividades, bem como   garantir a sensibilização de todos os funcionários e gestores do Sistema ou   Solução de Abastecimento de Água para Consumo Humano.<br>
+		      Por   meio de realização de reuniões com todos os gestores e as equipes que irão   participar. <br>
+		      Definição   do cronograma de trabalho e definição das etapas do PSA. </td>
+		    <td>Formulário 1: exemplo   de cronograma de execução das atividades para a elaboração do PSA.</td>
+		  </tr>
+		  <tr>
+		    <td><strong>2º   passo: constituição da equipe de elaboração do PSA.</strong><br>
+		      A equipe técnica consiste na formação de um grupo   multidisciplinar com a finalidade de elaboração, implementação e avaliação do   PSA.  A equipe poderá incluir   engenheiros, especialistas em qualidade da água, profissionais do setor de   saúde da vigilância sanitária, epidemiológica e ambiental, meio ambiente,   técnicos operacionais, social e representantes dos consumidores.</td>
+		    <td>Formulário 2: apresenta um exemplo de informações   para registro da equipe técnica. </td>
+		  </tr>
+		</table>
+
+		<table class="com-bordas">
+		  <thead><tr class="center">
+		    <th rowspan="2">Atividades</th>
+		    <th colspan="12">Meses</th>
+		  </tr>
+		  <tr class="center">
+		  	<th width="50"><strong>1</strong></th>
+		  	<th width="50"><strong>2</strong></th>
+		  	<th width="50"><strong>3</strong></th>
+		  	<th width="50"><strong>4</strong></th>
+		  	<th width="50"><strong>5</strong></th>
+		  	<th width="50"><strong>6</strong></th>
+		  	<th width="50"><strong>7</strong></th>
+		  	<th width="50"><strong>8</strong></th>
+		  	<th width="50"><strong>9</strong></th>
+		  	<th width="50"><strong>10</strong></th>
+		  	<th width="50"><strong>11</strong></th>
+		  	<th width="50"><strong>12</strong></th>
+		  </tr>
+		  </thead>
+		  <tr>
+		    <td>Planejamento das atividades</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		  </tr>
+		  <tr>
+		    <td>Constituição da equipe técnica</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		  </tr>
+		  <tr>
+		    <td>Levantamento das informações</td>
+		    <td>&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		  </tr>
+		  <tr>
+		    <td>Análise e descrição do sistema de   abastecimento e construção do diagrama de fluxo</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		  </tr>
+		  <tr>
+		    <td>Identificação dos perigos e   caracterização dos riscos  </td>
+		    <td>&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		  </tr>
+		  <tr>
+		    <td>Monitoramento operacional</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		  </tr>
+		  <tr>
+		    <td>Elaboração dos planos de gestão e comunicação</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		  </tr>
+		  <tr>
+		    <td>Validação e auditoria do PSA</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		    <td style="background:#ddf6fd">&nbsp;</td>
+		  </tr>
+		  <caption>Formulário 1– Exemplo de cronograma de execução das atividades para a elaboração do PSA. Fonte: Autores.</caption>
+		</table>
+
+
+
+
+		<table class="com-bordas">
+		  <thead><tr>
+		    <th rowspan="2" ><strong>Nome*</strong></th>
+		    <th class="center" colspan="2" ><strong>Informações*</strong></th>
+		    <th rowspan="2"><strong>Formação*</strong></th>
+		    <th rowspan="2"><strong>Cargo*</strong></th>
+		    <th rowspan="2"><strong>Instituição*</strong></th>
+		    <th rowspan="2"><strong>Responsabilidades*</strong></th>
+		  </tr>
+		  <tr>
+		    <th><strong>Telefone</strong></th>
+		    <th><strong>E-mail</strong></th>
+		  </tr></thead>
+		  <tr>
+		    <td>Fernando da Costa</td>
+		    <td>3314-5566</td>
+		    <td>fernando.costa@saae.pn.gov</td>
+		    <td>Engenheiro Civil</td>
+		    <td>Diretor do SAAE</td>
+		    <td>SAAE</td>
+		    <td>Coordenador do projeto </td>
+		  </tr>
+		  <tr>
+		    <td>Francisco da Silva</td>
+		    <td>3314-5577</td>
+		    <td>francisco.silva@saae.pn.gov</td>
+		    <td>Químico</td>
+		    <td>Gerente de Operação </td>
+		    <td>SAAE</td>
+		    <td>Implantação do PSA</td>
+		  </tr>
+		  <tr>
+		    <td>Sara Felino </td>
+		    <td>3317-0408</td>
+		    <td>sarafelino@saude.br</td>
+		    <td>Enfermeira</td>
+		    <td>Coordenadora da vigilância em saúde</td>
+		    <td>Secretaria Municipal de Saúde</td>
+		    <td>Acompanhamento e avaliação do PSA</td>
+		  </tr>
+		  <tr>
+		    <td>Fabio Lopes</td>
+		    <td>3318-4566</td>
+		    <td>fabiolopes@ambiente.br</td>
+		    <td>Biólogo</td>
+		    <td>Coordenador do meio ambiente</td>
+		    <td>Secretaria Municipal de Meio Ambiente</td>
+		    <td>Avaliação e implantação das medidas de controle na bacia hidrográfica</td>
+		  </tr>
+		  <tr>
+		    <td>Julia Oliveira </td>
+		    <td>3318-4677</td>
+		    <td>juliaoliveira@prefeitura.br</td>
+		    <td>Assistente social</td>
+		    <td>Assistente Social </td>
+		    <td>Secretaria de Assistência Social </td>
+		    <td>Mobilização dos técnicos e consumidores </td>
+		  </tr>
+		  <caption>Formulário 2 - Exemplo de constituição da equipe técnica para implementação do PSA. Fonte: Autores. <br>Notas: * informações fictícias. 
+		</caption>
+		</table>
+
+		<div class="box vermelho">
+			<h3>Atenção! </h3>
+			<p>Em pequenas comunidades, especialmente em áreas rurais, deve-se considerar que os usuários e os responsáveis pelo sistema de abastecimento possuem pouco conhecimento técnico e não estão familiarizados com a avaliação intensa e a documentação requerida pela abordagem padrão do PSA, necessitando, assim, de uma adaptação na seleção dos membros da equipe e de um maior engajamento e preparação da comunidade (WHO, 2012). Nestes casos, pessoas externas à comunidade, com expertise no assunto, podem ser úteis (BARTRAM <em>et al.</em>, 2009).</p>
+		</div>
+
+		<h4>Dificuldades típicas da etapa antecedente à elaboração do PSA</h4>
+		<p>De acordo com Bartram <em>et al</em>. (2009), os principais desafios encontrados na constituição da equipe do PSA são:</p>
+		<ol>
+		  <li>Encontrar pessoas qualificadas;</li>
+		  <li>identificar e engajar as partes interessadas externas;</li>
+		  <li>manter a equipe coesa;</li>
+		  <li>manter uma comunicação eficiente entre a equipe do PSA e todos as partes envolvidas no abastecimento de água;</li>
+		  <li>sensibilizar os técnicos para a importância do trabalho;</li>
+		  <li>mudar paradigmas da abordagem tradicional para preventiva;</li>
+		  <li>disponibilizar tempo para a fase de preparação e planejamento das atividades.</li>
+		</ol>
+
+		<h4>Produtos da etapa antecedente à elaboração do PSA</h4>
+		<ul>
+		  <li>Cronograma de trabalho definido;</li>
+		  <li>Equipe técnica identificada e sensibilizada.</li>
+		</ul>
+
+
+		<h3>Etapa de descrição e avaliação do sistema de abastecimento de água</h3>
+		<p>A etapa de <strong>avaliação do sistema</strong> deve partir do diagnóstico detalhado, desde o manancial de captação até o ponto final de consumo, e tem por objetivo verificar se o sistema pode garantir o tratamento e o fornecimento de água, de acordo com metas de saúde preestabelecidas. Veja os passos e a execução dessa etapa na Figura 1.11 e na Tabela 1.12. </p>
+
+		<!-- FIGURA 1.11 -->
+		<table class="com-bordas">
+		  <thead><tr>
+		    <th><strong>O que e como?</strong></th>
+		    <th><strong>Formulários</strong></th>
+		  </tr></thead>
+		  <tr>
+		    <td><strong>1º passo: </strong>descrição do sistema de abastecimento de   água. <br>
+		      A   descrição de um sistema de abastecimento de água para consumo humano   inicia-se por meio de uma descrição completa da bacia hidrográfica até a rede   de distribuição e da construção e validação de um diagrama de fluxo. O   fluxograma deve ser modificado sempre que necessário para refletir   adequadamente a situação que se deseja representar. A validação do fluxo será   realizada por meio de: i) verificação da abrangência das etapas; ii) correção   dos elementos constantes no diagrama, e iii) confirmação do diagrama <em>in loco</em> <br><br>
+		      <strong>2º passo: </strong>identificação de perigos e caracterização e   priorização dos perigos. <br>
+		      A   identificação de perigos com seus eventos perigosos nem sempre constitui   tarefa fácil, pois alguns perigos podem não ser tão óbvios. Nesta fase,   procura-se identificar como e por que os perigos ou eventos perigosos ocorrem   ao longo do sistema avaliado. Os perigos que podem estar   associados ao sistema de abastecimento de água podem ser classificados em   grupos, tais como: físico, químico e microbiológico. O método para caracterização dos riscos deve ser pautado no   conhecimento aprofundado das características do sistema em estudo. Desta   forma, sugere-se utilizar os dados históricos, as experiências de operadores   e técnicos, as publicações pertinentes, os estudos e pesquisas realizados,   além de opiniões de especialistas. A equipe do PSA pode adotar diferentes   métodos de avaliação do risco descritos anteriormente. A Figura 1.12 possui um   exemplo de Matriz de Priorização de Risco. <br><br>
+		      <strong>3º</strong><strong> passo:</strong> desenvolvimento, implementação e manutenção   de um plano de melhorias. <br>
+		      Tem   por objetivo definir um plano de melhoria para cada risco significativo   identificado no passo anterior. Os planos de melhoria podem incluir programas   de curto, médio ou longo prazo. Recursos significativos podem ser necessários   e, portanto, uma análise detalhada e uma priorização cuidadosa devem ser   feitas de acordo com a avaliação do sistema (BARTRAM <em>et al</em>., 2009). </td>
+		    <td>Após   a descrição detalhada do sistema de abastecimento de água, o modelo do <strong>Formulário 2</strong> permite, de forma   sintética, descrever as etapas do sistema em estudo. 
+		      O <strong>Formulário 3</strong> apresenta um exemplo   de diagrama de fluxo. <br><br>
+		      O <strong>Formulário 4</strong> apresenta um exemplo   de informações necessárias para caracterização dos perigos.<br><br>
+		      O <strong>Formulário</strong> 5 apresenta um exemplo   de plano de melhoria. 
+		      &nbsp;</td>
+		  </tr>
+		  <caption>Tabela 1.2 - Passos para execução das atividades da etapa de descrição e avaliação do sistema de abastecimento de água. Fonte: Autores.</caption>
+		</table>
+
+		<table class="com-bordas">
+			<caption>Formulário 2 - Exemplo de resumo da descrição do sistema de abastecimento de água. Fonte: Autores. </caption>
+		  <thead><tr>
+		    <th><strong>Componentes do sistema</strong></th>
+		    <th><strong>Descrição do processo</strong></th>
+		  </tr></thead>
+		  <tr>
+		    <td><strong>Ponto de captação</strong></td>
+		    <td>A água é captada superficialmente e bombeada por meio de três bombas   com capacidade de 60 L/s.</td>
+		  </tr>
+		  <tr>
+		    <td><strong>Mistura   rápida/Coagulação </strong></td>
+		    <td>&nbsp;A coagulação ocorre no ressalto hidráulico promovido na   calha <em>Parshal</em>. O tipo de coagulante   utilizado é o sulfato de alumínio líquido. </td>
+		  </tr>
+		  <tr>
+		    <td><strong>Floculação</strong></td>
+		    <td>A floculação hidráulica é realizada em seis câmaras, com tempo de   detenção hidráulica real de 20 a 40 min. e gradientes de velocidade variando   de 60 a   20&nbsp;s-1.</td>
+		  </tr>
+		  <tr>
+		    <td><strong>Decantação/Sedimentação</strong></td>
+		    <td>A ETA possui dois decantadores com uma taxa de aplicação superficial de   40 m3/m2.d. </td>
+		  </tr>
+		  <tr>
+		    <td><strong>Filtração</strong></td>
+		    <td>A carreira de filtração média dos filtros (duas unidades) é de 36   horas, sendo a retrolavagem efetuada a partir de um reservatório elevado com   capacidade de 100 m3 abastecido com água tratada.</td>
+		  </tr>
+		  <tr>
+		    <td><strong>Desinfecção</strong></td>
+		    <td>A água filtrada é destinada para o tanque de desinfecção com cloro-gás,   tempo de contato suficiente para inativação dos organismos patogênicos.</td>
+		  </tr>
+		  <tr>
+		    <td><strong>Reservatório</strong></td>
+		    <td>A água tratada é reservada por dois reservatórios com capacidade de 700   e 800 m³, os quais podem operar em série ou em paralelo. </td>
+		  </tr>
+		  <tr>
+		    <td><strong>Rede de   distribuição</strong></td>
+		    <td>A rede de distribuição apresenta uma extensão de, aproximadamente,   8.000 m. Devido ao seu avançado estado de deterioração (trechos muito   antigos, em ferro fundido e galvanizado), o sistema está sendo integralmente   substituído por tubulações em PVC.</td>
+		  </tr>
+		</table>
+
+		<div class="box vermelho">
+			<h3>Atenção! </h3>
+			<p>Para que o PSA seja utilizado para antecipar e gerenciar os riscos e eventos perigosos, é preciso estar amparado por informação técnica confiável e precisa. Recomenda-se, portanto, que <strong>a equipe técnica do PSA verifique por meio de visita em campo se todas as informações contidas no diagrama de fluxo estão corretas</strong> e, quando necessário, deve-se ajustá-lo de forma a refletir a situação real do sistema de abastecimento de água.</p>
+		</div>
+
+		<!-- FORMULARIO 3 -->
+
+		
+
+		<aside class="box">
+			<h3>Você sabia?</h3>
+			<p>Os <strong>perigos biológicos </strong>estão associados à presença de algas tóxicas e microrganismos na água (bactérias, vírus e protozoários), que podem constituir ameaças à saúde. Os <strong>perigos químicos </strong>estão associados à presença de substâncias químicas em concentrações tóxicas, que podem ser nocivas à saúde. Estas substâncias podem ocorrer naturalmente ou surgir durante os processos de tratamento e armazenamento da água. Os <strong>perigos físicos </strong>estão associados às características estéticas (organolépticas) da água, tais como cor, turbidez, gosto e odor. Os <strong>perigos radiológicos</strong> estão associados à contaminação da água a partir de fontes de radiação. A radiação pode ser emitida de forma natural ou antrópica, por meio de contaminação por efluentes da indústria ou radionuclídeos.</p>
+		</aside>
+		
+
+		<div class="box vermelho">
+			<h3>Atenção! </h3>
+			<p>Caro aluno, a partir de agora, deverá estar clara para você a diferença entre os significados de <strong>PERIGO,</strong> <strong>EVENTO PERIGOSO </strong>e <strong>RISCO</strong>. De acordo com WHO (2017):</p>
+			<ul>
+			  <li><strong>perigo</strong> é qualquer agente biológico, químico, físico ou radioativo que pode causar dano (ou prejuízo) à saúde pública.</li>
+			  <li><strong>evento perigoso</strong>: é qualquer incidente ou situação que produz, desencadeia ou aumenta a exposição de pessoas a um perigo.</li>
+			  <li><strong>risco</strong>: é a probabilidade de um perigo causar danos a uma população exposta, incluindo a severidade (magnitude) da sua consequência.</li>
+			</ul>
+		</div>
+
+		<!-- FIGURA 1.12 -->
+
+		<div class="box verde">
+
+			<h3>Você sabia?</h3>
+			<p><strong>Medidas de controle</strong> (também chamadas de <strong>barreiras</strong> ou <strong>medidas de mitigação</strong>) são etapas no sistema de abastecimento de água que afetam diretamente a qualidade da água potável e garantem que os padrões de qualidade da água sejam atingidos. As medidas de controle são atividades e processos aplicados para reduzir ou mitigar os riscos (BARTRAM <em>et al</em>., 2009).</p>
+		</div>
+
+		<p><strong>Vamos exemplificar </strong></p>
+		<p>Seguindo o exemplo do Formulário 4, na fase de identificação de eventos perigosos, poderíamos classificá-lo de forma quantitativa como risco médio, uma vez que a desinfecção inadequada poderia gerar efeitos moderados à saúde, como enterites, e as falhas na bomba dosadora poderiam ser sanadas com a instalação de uma bomba dosadora reserva.</p>
+
+
+<table class="com-bordas">
+	<caption>Formulário 4 - Exemplo de informações necessárias para caracterização dos perigos. Fonte: Autores.</caption>
+  <tr>
+    <td colspan="7">Etapa: Desinfecção <br>
+      Evento perigoso:   alteração da qualidade da água decorrente por falha na desinfecção </td>
+  </tr>
+  <tr>
+    <th rowspan="2"><strong>Perigos</strong></th>
+    <th colspan="3"><strong>Caracterização do perigo</strong></th>
+    <th rowspan="2"><strong> </strong><strong>Medidas   de controle existente</strong></th>
+    <th rowspan="2"><strong>Medida de controle adicional </strong></th>
+    <th rowspan="2" valign="top"><strong>Base/Fundamento </strong></th>
+  </tr>
+  <tr>
+    <th><strong>F*</strong></th>
+    <th><strong>S*</strong></th>
+    <th><strong>Risco</strong></th>
+  </tr>
+  <tr>
+    <td>Biológico<br>
+      <em>E. Coli</em></td>
+    <td>Diária   semanalmente (5)</td>
+    <td>Baixa (2)</td>
+    <td>Moderado (10)</td>
+    <td>Sistema de desinfecção utilizando hipoclorito de sódio a 12%, mas há   registro de falhas na bomba dosadora.</td>
+    <td></td>
+    <td valign="top"></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top">Nota: F: Frequência; S: Severidade</td>
+    <td valign="top"><strong>&nbsp;</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top"><strong>Orientação para o   preenchimento</strong></td>
+    <td valign="top"><strong>&nbsp;</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top"><strong>Etapa:</strong> identifica o componente ou etapa do sistema de   abastecimento de água, por exemplo, captação, adução, floculação etc.</td>
+    <td valign="top"><strong>&nbsp;</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top"><strong>Evento perigoso:</strong> descreve o que pode causar contaminação ao longo   do sistema.  </td>
+    <td valign="top"><strong>&nbsp;</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top"><strong>Perigos:</strong> identificação dos perigos (físico, químico,   microbiológico etc.) decorrentes de cada evento perigoso.</td>
+    <td valign="top"><strong>&nbsp;</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top"><strong>Frequência</strong>: descreve a probabilidade de ocorrência do perigo   (pouco frequente, frequente e muito frequente), utilizando a Matriz de   Priorização de Risco.</td>
+    <td valign="top"><strong>&nbsp;</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top"><strong>Severidade:</strong> descreve as consequências dos perigos para o   tratamento e a saúde das populações, utilizando a Matriz de Priorização de   Risco.</td>
+    <td valign="top"><strong>&nbsp;</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top"><strong>Risco: </strong>classifica o risco do evento perigoso em:   alto (catastrófico), moderado (significativo) e baixo (insignificante).</td>
+    <td valign="top"><strong>&nbsp;</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top"><strong>Medida de controle   existente:</strong> descreve<strong> </strong>as medidas disponíveis e   realizadas.</td>
+    <td valign="top"><strong>&nbsp;</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top"><strong>Medida de controle   adicional: </strong>descrição   das<strong> </strong>medidas necessárias para eliminar o perigo.</td>
+    <td valign="top"><strong>&nbsp;</strong></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top"><strong>Base/Fundamento:</strong> justificativa do evento perigoso. </td>
+    <td valign="top"><strong>&nbsp;</strong></td>
+  </tr>
+</table>
 
 
 
@@ -271,6 +819,12 @@
 			<div class="ctn-bt-fechar"><button class="fechar"></button></div>
 			<div data-nota="1">
 				<p>Surgiu da exigência da NASA em produzir alimentos inócuos para seus primeiros voos tripulados e foi desenvolvido nos anos 60 pela empresa <em>Pillsbury</em> (EUA), pelos Laboratórios do Exército dos Estados Unidos. Seu embasamento teórico partiu do <em>Failure Modes and Effect Analysis </em>(FMEA), ferramenta utilizada para localizar modos de falha em determinado processamento (WHO, 1998).</p>
+			</div>
+			<div data-nota="2">
+				<p>É definida por meio do julgamento sobre a estimativa de frequência com que o evento perigoso pode ocorrer.</p>
+			</div>
+			<div data-nota="3">
+				<p>É a consequência que o evento causa à saúde da população.</p>
 			</div>
 		</div>
 		</article>

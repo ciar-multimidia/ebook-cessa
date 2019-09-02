@@ -625,12 +625,14 @@ main{
 							height: 100%;
 							width: auto;
 						}
+					}
 
+					&.organizada {
 						$letras:"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z";
 
 						@each $letra in $letras{
 							$i: index($letras, $letra);
-							&:nth-child(#{$i}):after{
+							a:nth-child(#{$i}):after{
 								content: $letra;
 							}
 						}

@@ -507,6 +507,15 @@ main{
 
 		.formula{
 			margin: 4em 0;
+			padding-bottom: 1em;
+			position: relative;
+			
+			span.caption{
+				position: absolute;
+				bottom: 0; right: 0;
+				display: block;
+				color: grey;
+			}
 		}
 
 		.MathJax{
@@ -617,8 +626,8 @@ main{
 							color: #ff7a01;
 							font-weight: bold;
 							position: absolute;
-							bottom: 0;
-							left: 0;
+							bottom: 4px;
+							left: 4px;
 							background-color: white;
 							font-size: 1.5em;
 							width: 1.5em;
@@ -1194,6 +1203,8 @@ footer{
 				left: -75px;
 				bottom: 100%;
 				width: 300px;
+				max-height: 90vh;
+				overflow-y: auto;
 				&.ativo{
 					display: block;
 				}

@@ -189,8 +189,8 @@ body{
 		}
 		.textos-modulo{
 			@extend .sizes-content;
-			padding-top: 2em;
-			padding-bottom: 2em;
+			padding-top: 1em;
+			padding-bottom: 1em;
 			margin-bottom: 3em;
 			// border-top: 1px solid white;
 			// border-bottom: 1px solid white;
@@ -224,21 +224,19 @@ body{
 		.organizacao-edicao-data{
 			@extend .sizes-content;
 			@include display(flex);
-			@include justify-content(center);
-			margin-bottom: 2em;
-			div{
+			@include justify-content(space-around);
+			@include align-items(flex-end);
+			margin-bottom: 4em;
+			& > div{
 				p{
 					color: white;
 					margin: 0;
 					line-height: 1.5;
 				}
-				margin-right: 15em;
+				// margin-right: 15em;
 
 				&:nth-child(2){
-					margin-right: 0;
-					p{
-						text-align: right;
-					}
+					text-align: right;
 				}
 			}
 		}

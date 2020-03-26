@@ -1030,6 +1030,60 @@ main{
 				
 			}
 		}
+
+		.catalografica {
+			font-size: 0.9em;
+			border: 1px solid; 
+			img {
+				width: 100%; height: auto;
+			}
+
+			p {
+				margin: 0 0 20px;
+			}
+
+			.titulo {
+				position: relative; 
+				width: 100%; 
+				font-size: 1.1em; 
+				border-bottom: 1px solid; 
+				padding: 10px 25px
+			}
+
+			.codigo {
+				position: relative; 
+				width: 10%; 
+				float: left; 
+				padding: 25px 0px 25px 25px;
+				font-size: 1.1em;
+				margin-top: 0;
+			}
+			
+			.dados {
+				position: relative; 
+				width: 88%; 
+				float: right; 
+				text-align: left; 
+				padding: 25px 25px 25px 0;
+				margin-top: 0;
+				.cdu {
+					text-align: right;
+					margin-bottom: 0;
+				}
+			}
+
+			&:after{
+				content: '';
+				display: table;
+				clear: both;
+			}
+
+			& + .biblio-responsavel{
+				// font-size: 0.9em;
+				text-align: center;
+				margin-top: 0.5em;
+			}
+			}
 	}
 }
 

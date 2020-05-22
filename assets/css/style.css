@@ -465,7 +465,7 @@ body {
   border: none;
 }
 #header .logo-e-links {
-  padding: 2em 0;
+  padding: 1.4em 0;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -482,31 +482,98 @@ body {
   -o-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: justify;
-  -webkit-box-align: start;
-  -moz-box-align: start;
-  box-align: start;
-  -webkit-align-items: flex-start;
-  -moz-align-items: flex-start;
-  -ms-align-items: flex-start;
-  -o-align-items: flex-start;
-  align-items: flex-start;
-  -ms-flex-align: start;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
+  -ms-flex-align: end;
+}
+#header .logo-e-links h1.titulo-projeto {
+  margin: 0;
+  font-size: 1.8em;
+  color: #4a1d0e;
+}
+#header .logo-e-links a.logo-curso {
+  display: block;
 }
 #header .logo-e-links a.logo-curso img {
-  height: 7.5em;
+  height: 5em;
   width: auto;
 }
-#header .logo-e-links a.site {
+#header .logo-e-links .site-e-logos {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
+  -ms-flex-align: end;
+}
+#header .logo-e-links .site-e-logos a.site {
+  display: block;
   color: #0098c1;
   text-decoration: none;
 }
-#header .logo-e-links a.site:hover {
+#header .logo-e-links .site-e-logos a.site:hover {
   text-decoration: underline;
 }
-#header .logo-e-links a.site img {
+#header .logo-e-links .site-e-logos a.site img {
   margin-left: 0.2em;
   height: 1em;
   width: auto;
+}
+#header .logo-e-links .site-e-logos .logos {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+#header .logo-e-links .site-e-logos .logos img {
+  display: block;
+  width: auto;
+  margin-left: 1em;
+}
+#header .logo-e-links .site-e-logos .logos img.funape {
+  height: 1.8em;
+}
+#header .logo-e-links .site-e-logos .logos img.funasa {
+  height: 3em;
 }
 #header section.modulo-titulo {
   background: #0fb8e5;
@@ -742,9 +809,17 @@ body {
 
 main {
   position: relative;
-  padding-top: 5em;
+  padding-top: 3em;
   padding-bottom: 8em;
   background-color: #fff;
+}
+main a.logo-curso {
+  display: inline-block;
+  margin-bottom: 3em;
+}
+main a.logo-curso img {
+  height: 6em;
+  width: auto;
 }
 main section.modulos {
   width: 100%;
@@ -988,6 +1063,12 @@ main article a, main article a:visited, main article a:link {
   overflow-wrap: break-all;
   word-wrap: break-all;
   word-break: break-all;
+}
+main article img.logo-curso-ficha {
+  display: block;
+  height: 6em;
+  width: auto;
+  margin-top: 4rem;
 }
 main article figure > a {
   display: block;

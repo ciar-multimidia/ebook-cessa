@@ -28,31 +28,62 @@ body{
 	}
 
 	.logo-e-links{
-		padding: 2em 0;
+		padding: 1.4em 0;
 		@extend .sizes-content;
 		@include display(flex);
 		@include justify-content(space-between);
-		@include align-items(flex-start);
+		@include align-items(flex-end);
+
+
+		h1.titulo-projeto{
+			margin: 0;
+			font-size: 1.8em;
+			color: $marrom;
+		}
 
 		a.logo-curso{
+			display: block;
 			img{
-				height: 7.5em;
+				height: 5em;
 				width: auto;
 			}
 		}
 
-		a.site{
-			// color: grey;
-			color: $azul-link;
+		.site-e-logos{
+			@include display(flex);
+			@include flex-direction(column);
+			@include align-items(flex-end);
+			a.site{
+				display: block;
+				// color: grey;
+				color: $azul-link;
 
-			text-decoration: none;
-			&:hover{
-				text-decoration: underline;
+				text-decoration: none;
+				&:hover{
+					text-decoration: underline;
+				}
+				img{
+					margin-left: 0.2em;
+					height: 1em;
+					width: auto;
+				}
 			}
-			img{
-				margin-left: 0.2em;
-				height: 1em;
-				width: auto;
+
+			.logos{
+				margin-top: 1em;
+				@include display(flex);
+				@include align-items(center);
+				img{
+					display: block;
+					width: auto;
+					margin-left: 1em;
+					&.funape{
+						height: 1.8em;
+					}
+					&.funasa{
+						height: 3em;
+					}
+				}
 			}
 		}
 	}
@@ -280,14 +311,26 @@ body{
 
 main{
 	position: relative;
-	padding-top: 5em;
+	padding-top: 3em;
 	padding-bottom: 8em;
 	@extend .sizes-container;
 	background-color: #fff;
 
-
+	a.logo-curso{
+		display: inline-block;
+		margin-bottom: 3em;
+		img{
+			height: 6em;
+			width: auto;
+		}
+	}
 	section.modulos{
+
+
 		width: 100%;
+
+		
+
 		a{
 			$transition-speed: 0.1s;
 
@@ -580,6 +623,15 @@ main{
 
 			}
 		}
+
+		img.logo-curso-ficha{
+			display: block;
+			height: 6em;
+			width: auto;
+			margin-top: 4rem;
+		}
+
+
 
 		figure{
 			& > a{

@@ -34,6 +34,59 @@
 			}
 		}
 		
+		section.capa {
+			p.topo-capa{
+				@extend .sizes-content;
+				color: #000;
+				}
+			.textos-modulo {
+					h2.n-modulo {
+					color: #000;
+					}
+					h1.titulo-modulo{
+					color: #000;
+					}
+				}
+			.organizacao-edicao-data{	
+				& > div{
+					p {
+						color: #000;
+					}
+				}
+			}
+			.marcasprint{
+				@extend .sizes-content;
+				@include display(flex);
+				@include justify-content(center);
+				@include align-items(center);
+				margin-bottom: 2em;
+
+				& > *{
+					margin-right: 2em;
+					&:last-child{
+						margin-right: 0;
+					}					
+				}
+				img{
+					display: block;
+					height: 3em;
+					width: auto;
+				}
+
+				p{
+					line-height: 1.5;
+					text-transform: uppercase;
+					font-weight: bold;
+					font-size: 1.2em;
+					text-align: center;
+					color: white;
+				}
+			}
+			p.aviso{
+				color: #000;
+			}
+
+		}
 
 		section.modulo-titulo{
 			// padding: 0;
